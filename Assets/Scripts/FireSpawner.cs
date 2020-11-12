@@ -18,11 +18,11 @@ public class FireSpawner : MonoBehaviour
         GameObject newObject = Instantiate(prefabToSpawn, positionOfSpawnedObject, rotationOfSpawnedObject); // Instantiate
 
         if (this.tag == "P1"){//Shooter's tag
-            newObject.tag = "P3";// Set fire ball tag for checking collision
+            newObject.tag = "P1_fireball";// Set fire ball tag for checking collision
             newObject.transform.Rotate(new Vector3(0, 0, -180));// Change Direction for fire ball from right.
         }
         if (this.tag == "P2"){//Shooter's tag
-            newObject.tag = "P4";// Set fire ball tag for checking collision
+            newObject.tag = "P2_fireball";// Set fire ball tag for checking collision
         }
 
         // modify the velocity of the new object.

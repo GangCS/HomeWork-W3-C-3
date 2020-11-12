@@ -6,8 +6,8 @@ TagManager:
   tags:
   - P1
   - P2
-  - P3
-  - P4
+  - P1_fireball
+  - P2_fireball
   layers:
   - Default
   - TransparentFX

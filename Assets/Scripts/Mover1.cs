@@ -5,14 +5,6 @@ using UnityEngine;
 public class Mover1 : MonoBehaviour
 {
     [Tooltip("Speed of movement, in meters per second")] [SerializeField] float speed = 5f;
-
-    private SpriteRenderer sr; //To modify Spirit Rendered of current game object
-
-    private void Start()
-    {
-        sr = GetComponent<SpriteRenderer>();
-    }
-
     void Update()
     {
         if(this.tag == "P1")// We are setting the location movement for player 1
